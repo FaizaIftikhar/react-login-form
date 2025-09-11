@@ -28,7 +28,7 @@ export default function LoginForm() {
     } else {
       setFormData((prev) => ({
         ...prev,
-        message: `Welcome, ${formData.email}`,
+        message: `Welcome, ${formData.name} Your email is ${formData.email}`,
         email: "",
         password: ""
       }));
