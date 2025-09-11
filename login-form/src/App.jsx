@@ -1,10 +1,12 @@
-import LoginForm from "./LoginForm";
+//import LoginForm from "./LoginForm";
+import UpgradeLoginForm from "./UpgradeLoginForm";
+
 
 function App() {
   return (
-    <div>
-      <LoginForm />
-    </div>
+    <ReactFragment>
+       <UpgradeLoginForm/>
+    </ReactFragment>
   );
 }
 
