@@ -35,6 +35,15 @@ export default function LoginForm() {
     }
     console.log("submit:", formData);
   };
+  // New: Reset all fields
+  const handleReset = () => {
+    setFormData({
+      email: "",
+      password: "",
+      showPassword: false,
+      message: ""
+    });
+  };
 
   return (
     <form onSubmit={handleSubmit}>
@@ -81,6 +90,7 @@ export default function LoginForm() {
       </label>
 
       <button type="submit">Login</button>
+      <button type="button" onClick={handleReset}>Reset</button>
 
       {formData.message && <p>{formData.message}</p>}
     </form>
